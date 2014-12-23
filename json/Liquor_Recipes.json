@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Gin",
+    "liquortype": "Gin",
+    "cocktail": "Martini",
+    "ingredients": "3 oz. gin; 1/2 oz. dry vermouth; green olive or lemon twist, for garnish",
+    "howtouse": "Stir gin and vermouth in a mixing glass with ice for about twenty seconds. Strain into a chilled martini glass.",
+    "note": "A classic – always stirred, never shaken.",
+    "tip": "If you like a wetter martini, try a 4:1 ratio of gin to vermouth instead of our suggested 6:1 ratio. If you're no fan of vermouth, keep stepping it back until that bottle has fully exited the kitchen, à la Winston Churchill, who famously said he drank martinis with only gin and a bow in the direction of France. Our suggestions: Halcyon Organic Distilled Gin, Walla Walla Gin or Spy Hop.",
+    "exclude": "",
+    "source": "",
+    "url": ""
+  },
+  {
+    "title": "Vodka",
+    "liquortype": "Vodka",
+    "cocktail": "Vodka Martini",
+    "ingredients": "3 oz. vodka; 1/2 oz. dry vermouth; green olive or lemon twist, for garnish",
+    "howtouse": "Stir vodka and vermouth in a mixing glass with ice for about twenty seconds. Strain into a chilled martini glass.",
+    "note": "",
+    "tip": "Gin. Oops, we meant gin.",
+    "exclude": "",
+    "source": "",
+    "url": ""
+  },
+  {
+    "title": "Gin",
+    "liquortype": "Gin",
+    "cocktail": "Pink Gin",
+    "ingredients": "2 oz. gin; 3 dashes Angostura bitters",
+    "howtouse": "Add three dashes of Angostura bitters to a chilled rocks glass and swirl to coat the bottom. Pour off the excess and then add gin.",
+    "note": "A British cocktail that's stiffer than it looks.",
+    "tip": "If it's too strong, add a large ice cube and top off with soda water. Our suggestions: Big Gin or Counter Gin (sub in orange bitters with a splash of soda, says Batch 206 owner Jeff Steichen).",
+    "exclude": "",
+    "source": "",
+    "url": ""
+  },
+  {
+    "title": "Gin",
+    "liquortype": "Gin",
+    "cocktail": "The Last Word",
+    "ingredients": "3/4 oz. gin; 3/4 oz. lime juice; 3/4 oz. green Chartreuse; 3/4 oz. maraschino liqueur",
+    "howtouse": "Shake gin, lime juice, green Chartreuse and maraschino liqueur with ice, then strain into a cocktail glass.",
+    "note": "A once-forgotten cocktail that was resurrected by Seattle bartender Murray Stenson.",
+    "tip": "Try this with a London dry-style gin. Our suggestions: Voyager or Big Gin.",
+    "exclude": "",
+    "source": "Recipe from \"The Essential Bartender's Guide\" by Robert Hess.",
+    "url": "http://seattletimes.com/html/restaurants/2008837441_zres11lastword.html"
+  },
+  {
+    "title": "Gin",
+    "liquortype": "Gin",
+    "cocktail": "Negroni",
+    "ingredients": "1 oz. gin; 1 oz. Campari; 1 oz. sweet vermouth; orange twist, for garnish",
+    "howtouse": "Stir gin, Campari and sweet vermouth in a mixing glass with ice. Strain into a coupe glass.",
+    "note": "A cocktail that's moodily spicy and sweet, but not always to everyone's taste.",
+    "tip": "For a drier version, try a 3:1:1 ratio of gin to Campari and vermouth. Our suggestion: Copperworks Gin.",
+    "exclude": "",
+    "source": "",
+    "url": ""
+  },
+  {
+    "title": "Accoutrements",
+    "liquortype": "Accoutrements",
+    "cocktail": "Gin-Gin Mule",
+    "ingredients": "1 1/2 oz. gin; 3/4 oz. lime juice; 3/4 oz. simple syrup; 8-10 mint leaves; 2 oz. Rachel's ginger beer",
+    "howtouse": "Muddle the mint leaves with lime juice and simple syrup in the bottom of a mixing glass or shaker. Add gin and ice. Shake well, then strain into a highball glass filled with ice and top with ginger beer.",
+    "note": "A sweet, mint-flecked cocktail created by New York mixologist Audrey Saunders.",
+    "tip": "This adaptation is from Copperworks, and works well with their robust gin.",
+    "exclude": "",
+    "source": "Recipe is Copperworks' adaptation.",
+    "url": "http://copperworksdistilling.com/2014/05/beyond-the-gin-tonic-2/"
+  },
+  {
+    "title": "Whiskey",
+    "liquortype": "Whiskey",
+    "cocktail": "Hot Toddy",
+    "ingredients": "1 oz. bourbon; 2 tsp. lemon; 1 Tbs. honey; 1/4 cup hot water",
+    "howtouse": "",
+    "note": "A steamy cocktail to help ward away winter's flus.",
+    "tip": "",
+    "exclude": "",
+    "source": "",
+    "url": ""
+  }
+]

@@ -5,16 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
+    
+    <div class="title"><span class="blue">SEAHAWKS</span> <span class="green">PERSONALITY QUIZ</span></div>
 
+    <div class="quiz-box"></div>
+    
     <script>
       var quizData = <%= JSON.stringify(json.SeahawksQuiz_Dummy_Data) %>
     </script>
     <script src="app.js"></script>
     <% /*= t.include("partials/_adFoot.html"); */ %>
     <%= t.include("partials/_workHere.html") %>
-    
+
   </body>
 </html>

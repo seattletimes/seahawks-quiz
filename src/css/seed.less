@@ -4,3 +4,76 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+@navy: #00163f;
+@green: #1cce3c;
+@gray: #a5a7af;
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.title {
+  font-family: "Oswald";
+  font-size: 30px;
+  padding-bottom: 5px;
+  font-weight: bold;
+
+  .blue {
+    color: @navy;
+  }
+
+  .green {
+    color: @green;
+  }
+}
+
+.question-box {
+  height: 500px;
+  width: 750px;
+  padding: 50px;
+  border: 10px solid @gray;
+  border-radius: 10px;
+
+  input {
+    display: none;
+
+    & + label::before {
+      position: relative;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f1db";
+      margin-right: 4px;
+    }
+
+    &:checked + label::before {
+      content: "\f111";
+    }
+  }
+
+  label {
+    cursor: pointer;
+
+    &::before {
+    }
+  }
+
+  .next {
+    background: @navy;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: @green;
+    }
+  }
+}

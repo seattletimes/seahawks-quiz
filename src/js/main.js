@@ -2,6 +2,7 @@
 
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
-ich.addTemplate("quizTemplate", quizTemplate);
 
-document.body.innerHTML = ich.quizTemplate(quizData);
+// Set up quiz box template
+ich.addTemplate("quizTemplate", quizTemplate);
+document.querySelector(".quiz-box").innerHTML = ich.quizTemplate(quizData[0]);

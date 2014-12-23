@@ -1,1 +1,12 @@
-Hello world.
+<div class="question-box">
+  {{question}}
+
+  {{#answers}}
+    <p>
+      <input type="radio" name="answer" id="{{.}}">
+      <label for="{{.}}">{{.}}</label>
+    </p>
+  {{/answers}}
+
+  <button class="next">NEXT</button>
+</div>

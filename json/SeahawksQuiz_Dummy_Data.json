@@ -1,0 +1,26 @@
+[
+  {
+    "number": "1",
+    "question": "What is your favorite color?",
+    "answers": { 
+      "Red": ["Audrey", "Thomas"], 
+      "Blue": ["Whitney"]
+    }
+  },
+  {
+    "number": "2",
+    "question": "What is your favorite ice cream?",
+    "answers": { 
+      "Chocolate": ["Audrey"], 
+      "Vanilla": ["Thomas"], 
+      "Strawberry": ["Whitney"]
+    }
+  },
+  {
+    "number": "3",
+    "question": "How many hamsters do you own?",
+    "answers": { 
+      "One million": ["Audrey", "Thomas", "Whitney"] 
+    }
+  }
+]

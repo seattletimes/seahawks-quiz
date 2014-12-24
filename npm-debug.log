@@ -1,0 +1,186 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-g', 'bower' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose request where is /bower
+5 verbose request registry https://registry.npmjs.org/
+6 verbose request id cdff4764b9208fb3
+7 verbose url raw /bower
+8 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+9 verbose url resolved https://registry.npmjs.org/bower
+10 verbose request where is https://registry.npmjs.org/bower
+11 info trying registry request attempt 1 at 09:48:04
+12 verbose etag "3JZ43VVP8MJ3PR5GQRR4RO1AD"
+13 http GET https://registry.npmjs.org/bower
+14 http 304 https://registry.npmjs.org/bower
+15 silly registry.get cb [ 304,
+15 silly registry.get   { date: 'Wed, 24 Dec 2014 17:47:58 GMT',
+15 silly registry.get     server: 'Apache',
+15 silly registry.get     via: '1.1 varnish',
+15 silly registry.get     'last-modified': 'Wed, 24 Dec 2014 17:47:58 GMT',
+15 silly registry.get     'cache-control': 'max-age=60',
+15 silly registry.get     etag: '"3JZ43VVP8MJ3PR5GQRR4RO1AD"',
+15 silly registry.get     age: '46',
+15 silly registry.get     'x-served-by': 'cache-sjc3127-SJC',
+15 silly registry.get     'x-cache': 'HIT',
+15 silly registry.get     'x-cache-hits': '1',
+15 silly registry.get     'x-timer': 'S1419443278.375550,VS0,VE1',
+15 silly registry.get     vary: 'Accept',
+15 silly registry.get     'content-length': '0',
+15 silly registry.get     'keep-alive': 'timeout=10, max=50',
+15 silly registry.get     connection: 'Keep-Alive' } ]
+16 verbose etag https://registry.npmjs.org/bower from cache
+17 info outdated updating [ [ '/usr/local/lib', 'bower', '1.2.8', '1.3.12', '1.3.12', 'latest' ] ]
+18 verbose install where,what [ '/usr/local/lib', [ 'bower@1.3.12' ] ]
+19 verbose cache add [ 'bower@1.3.12', null ]
+20 verbose cache add name=undefined spec="bower@1.3.12" args=["bower@1.3.12",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'bower@1.3.12',
+21 verbose parsed url   path: 'bower@1.3.12',
+21 verbose parsed url   href: 'bower@1.3.12' }
+22 verbose cache add name="bower" spec="1.3.12" args=["bower","1.3.12"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '1.3.12',
+23 verbose parsed url   path: '1.3.12',
+23 verbose parsed url   href: '1.3.12' }
+24 verbose addNamed [ 'bower', '1.3.12' ]
+25 verbose addNamed [ '1.3.12', '1.3.12' ]
+26 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+27 verbose lock bower@1.3.12 /Users/Audrey/.npm/9819431c-bower-1-3-12.lock
+28 verbose registry.get https://registry.npmjs.org/bower not expired, no request
+29 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+30 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+31 silly resolved [ { name: 'bower',
+31 silly resolved     version: '1.3.12',
+31 silly resolved     description: 'The browser package manager',
+31 silly resolved     author: { name: 'Twitter' },
+31 silly resolved     licenses: [ [Object] ],
+31 silly resolved     repository: { type: 'git', url: 'https://github.com/bower/bower' },
+31 silly resolved     main: 'lib',
+31 silly resolved     homepage: 'http://bower.io',
+31 silly resolved     engines: { node: '>=0.10.0' },
+31 silly resolved     dependencies:
+31 silly resolved      { abbrev: '~1.0.4',
+31 silly resolved        archy: '0.0.2',
+31 silly resolved        'bower-config': '~0.5.2',
+31 silly resolved        'bower-endpoint-parser': '~0.2.2',
+31 silly resolved        'bower-json': '~0.4.0',
+31 silly resolved        'bower-logger': '~0.2.2',
+31 silly resolved        'bower-registry-client': '~0.2.0',
+31 silly resolved        cardinal: '0.4.0',
+31 silly resolved        chalk: '0.5.0',
+31 silly resolved        chmodr: '0.1.0',
+31 silly resolved        'decompress-zip': '0.0.8',
+31 silly resolved        fstream: '~1.0.2',
+31 silly resolved        'fstream-ignore': '~1.0.1',
+31 silly resolved        glob: '~4.0.2',
+31 silly resolved        'graceful-fs': '~3.0.1',
+31 silly resolved        handlebars: '~2.0.0',
+31 silly resolved        inquirer: '0.7.1',
+31 silly resolved        insight: '0.4.3',
+31 silly resolved        'is-root': '~1.0.0',
+31 silly resolved        junk: '~1.0.0',
+31 silly resolved        lockfile: '~1.0.0',
+31 silly resolved        'lru-cache': '~2.5.0',
+31 silly resolved        mkdirp: '0.5.0',
+31 silly resolved        mout: '~0.9.0',
+31 silly resolved        nopt: '~3.0.0',
+31 silly resolved        opn: '~1.0.0',
+31 silly resolved        osenv: '0.1.0',
+31 silly resolved        'p-throttler': '0.1.0',
+31 silly resolved        promptly: '0.2.0',
+31 silly resolved        q: '~1.0.1',
+31 silly resolved        request: '~2.42.0',
+31 silly resolved        'request-progress': '0.3.0',
+31 silly resolved        retry: '0.6.0',
+31 silly resolved        rimraf: '~2.2.0',
+31 silly resolved        semver: '~2.3.0',
+31 silly resolved        'shell-quote': '~1.4.1',
+31 silly resolved        'stringify-object': '~1.0.0',
+31 silly resolved        'tar-fs': '0.5.2',
+31 silly resolved        tmp: '0.0.23',
+31 silly resolved        'update-notifier': '0.2.0',
+31 silly resolved        which: '~1.0.5' },
+31 silly resolved     devDependencies:
+31 silly resolved      { coveralls: '~2.11.0',
+31 silly resolved        'expect.js': '~0.3.1',
+31 silly resolved        grunt: '~0.4.4',
+31 silly resolved        'grunt-cli': '^0.1.13',
+31 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+31 silly resolved        'grunt-contrib-watch': '~0.6.1',
+31 silly resolved        'grunt-exec': '~0.4.2',
+31 silly resolved        'grunt-simple-mocha': '~0.4.0',
+31 silly resolved        istanbul: '~0.3.2',
+31 silly resolved        'load-grunt-tasks': '~0.6.0',
+31 silly resolved        mocha: '~1.21.4',
+31 silly resolved        nock: '~0.46.0',
+31 silly resolved        'node-uuid': '~1.4.1',
+31 silly resolved        proxyquire: '~1.0.1' },
+31 silly resolved     scripts: { test: 'grunt test' },
+31 silly resolved     bin: { bower: 'bin/bower' },
+31 silly resolved     preferGlobal: true,
+31 silly resolved     gitHead: 'b26c072f0db054a1902ec4d2e3726dbf8a1c799a',
+31 silly resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+31 silly resolved     _id: 'bower@1.3.12',
+31 silly resolved     _shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+31 silly resolved     _from: 'bower@1.3.12',
+31 silly resolved     _npmVersion: '2.0.0',
+31 silly resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+31 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+31 silly resolved     dist:
+31 silly resolved      { shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+31 silly resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.3.12.tgz' },
+31 silly resolved     directories: {},
+31 silly resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
+31 silly resolved     readme: 'ERROR: No README data found!' } ]
+32 info install bower@1.3.12 into /usr/local/lib
+33 info installOne bower@1.3.12
+34 verbose lib/node_modules/bower unbuild
+35 info preuninstall bower@1.2.8
+36 info uninstall bower@1.2.8
+37 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bower@1.2.8
+38 verbose /usr/local/bin,[object Object] binRoot
+39 info postuninstall bower@1.2.8
+40 verbose lib/node_modules/bower unbuild
+41 info preuninstall bower@1.2.8
+42 info uninstall bower@1.2.8
+43 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bower@1.2.8
+44 verbose /usr/local/bin,[object Object] binRoot
+45 info postuninstall bower@1.2.8
+46 error error rolling back Error: EACCES, unlink '/usr/local/lib/node_modules/bower/.jshintrc'
+46 error error rolling back  bower@1.3.12 { [Error: EACCES, unlink '/usr/local/lib/node_modules/bower/.jshintrc']
+46 error error rolling back   errno: 3,
+46 error error rolling back   code: 'EACCES',
+46 error error rolling back   path: '/usr/local/lib/node_modules/bower/.jshintrc' }
+47 error Error: EACCES, unlink '/usr/local/lib/node_modules/bower/.editorconfig'
+47 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/bower/.editorconfig']
+47 error   errno: 3,
+47 error   code: 'EACCES',
+47 error   path: '/usr/local/lib/node_modules/bower/.editorconfig' }
+48 error Please try running this command again as root/Administrator.
+49 error System Darwin 12.5.0
+50 error command "node" "/usr/local/bin/npm" "update" "-g" "bower"
+51 error cwd /Users/Audrey/Projects/seahawks-quiz
+52 error node -v v0.10.31
+53 error npm -v 1.4.23
+54 error path /usr/local/lib/node_modules/bower/.editorconfig
+55 error code EACCES
+56 error errno 3
+57 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/bower/.editorconfig'
+58 verbose exit [ 3, true ]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Audrey",
+    "answers": [ "Blue", "Chocolate", "1,000,000" ]
+  },
+  {
+    "name": "Thomas",
+    "answers": [ "Blue", "Vanilla", "2,000,000" ]
+  },
+  {
+    "name": "Whitney",
+    "answers": [ "Red", "Strawberry", "1,000,000" ]
+  }
+]

@@ -1,12 +1,8 @@
-<div class="question-box">
-  {{question}}
+{{question}}
 
-  {{#answers}}
-    <p>
-      <input type="radio" name="answer" id="{{.}}">
-      <label for="{{.}}">{{.}}</label>
-    </p>
-  {{/answers}}
-
-  <button class="next">NEXT</button>
-</div>
+{{#answers}}
+  <p>
+    <input type="radio" name="answer" id="{{.}}">
+    <label for="{{.}}">{{.}}</label>
+  </p>
+{{/answers}}

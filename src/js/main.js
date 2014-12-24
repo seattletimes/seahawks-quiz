@@ -3,6 +3,11 @@
 var $ = require("jquery");
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
+var resultTemplate = require("./_resultTemplate.html");
+
+// Set up templates
+ich.addTemplate("quizTemplate", quizTemplate);
+ich.addTemplate("resultTemplate", resultTemplate);
 
 var showQuestion = function(index) {
   $(".question-box").html(ich.quizTemplate(quizData[index]));
@@ -35,11 +40,11 @@ var calculateResult = function() {
   // choose randomly from highest matches
   var random = Math.round(Math.random() * (highestNames.length - 1));
   var result = highestNames[random];
-  $(".quiz-box").html(result);
+  // display result
+  $(".quiz-box").html(ich.resultTemplate(playerData[result]));
 };
 
-// Set up quiz box template and show first question
-ich.addTemplate("quizTemplate", quizTemplate);
+// setup
 var answers = [];
 var questionIndex = 0;
 showQuestion(questionIndex);
@@ -49,7 +54,7 @@ $(".next").click(function() {
     answers.push($("input:checked")[0].id);
 
     if (questionIndex < quizData.length - 1) {
-      questionIndex += 1; 
+      questionIndex += 1;
       showQuestion(questionIndex);
     } else {
       calculateResult();

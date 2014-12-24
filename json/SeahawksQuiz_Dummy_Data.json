@@ -1,16 +1,13 @@
 [
   {
-    "number": "1",
     "question": "What is your favorite color?",
     "answers": [ "Blue", "Red" ]
   },
   {
-    "number": "2",
     "question": "What is your favorite ice cream flavor?",
     "answers": [ "Chocolate", "Vanilla", "Strawberry" ]
   },
   {
-    "number": "3",
     "question": "How many hamsters do you own?",
     "answers": [ "1,000,000", "2,000,000" ]
   }

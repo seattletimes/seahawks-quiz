@@ -49,6 +49,12 @@ var answers = [];
 var questionIndex = 0;
 showQuestion(questionIndex);
 
+// show next button when answer is selected
+$(".quiz-box").on("click", "input", (function(){
+  $(".next").addClass("active");
+}));
+
+// record answer and move on to next question
 $(".next").click(function() {
   if ($("input:checked")) {
     answers.push($("input:checked")[0].id);
@@ -56,6 +62,11 @@ $(".next").click(function() {
     if (questionIndex < quizData.length - 1) {
       questionIndex += 1;
       showQuestion(questionIndex);
+      $(".next").removeClass("active");
+      // Change button text on last question
+      if (questionIndex == quizData.length - 1) {
+        $(".next").html("FINISH");
+      }
     } else {
       calculateResult();
     }

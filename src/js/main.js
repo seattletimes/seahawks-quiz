@@ -4,32 +4,12 @@ var $ = require("jquery");
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
 
-// Set up quiz box template
-ich.addTemplate("quizTemplate", quizTemplate);
-
 var showQuestion = function(index) {
   $(".question-box").html(ich.quizTemplate(quizData[index]));
 };
 
-var answers = [];
-var questionIndex = 0;
-showQuestion(questionIndex);
-
-$(".next").click(function() {
-  if ($("input:checked")) {
-    answers.push($("input:checked")[0].id);
-
-    if (questionIndex < quizData.length - 1) { 
-      questionIndex += 1; 
-      showQuestion(questionIndex);
-    } else {
-      $(".quiz-box").html(answers);
-      compareAnswers();
-    }
-  }
-});
-
-var compareAnswers = function() {
+var calculateResult = function() {
+  // compare user answers with player answers
   var scores = {};
   for (var index in answers) {
     var answer = answers[index];
@@ -43,5 +23,36 @@ var compareAnswers = function() {
       }
     }
   }
-  console.log(scores)
-}
+  // find highest match(es)
+  var highestScore = 0;
+  var highestNames = [];
+  for (var player in scores) {
+    if (scores[player] >= highestScore) {
+      highestNames.push(player);
+      highestScore = scores[player];
+    }
+  }
+  // choose randomly from highest matches
+  var random = Math.round(Math.random() * (highestNames.length - 1));
+  var result = highestNames[random];
+  $(".quiz-box").html(result);
+};
+
+// Set up quiz box template and show first question
+ich.addTemplate("quizTemplate", quizTemplate);
+var answers = [];
+var questionIndex = 0;
+showQuestion(questionIndex);
+
+$(".next").click(function() {
+  if ($("input:checked")) {
+    answers.push($("input:checked")[0].id);
+
+    if (questionIndex < quizData.length - 1) {
+      questionIndex += 1; 
+      showQuestion(questionIndex);
+    } else {
+      calculateResult();
+    }
+  }
+});

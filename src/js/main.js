@@ -52,6 +52,7 @@ showQuestion(questionIndex);
 // show next button when answer is selected
 $(".quiz-box").on("click", "input", (function(){
   $(".next").addClass("active");
+  $(".next").attr("disabled", false);
 }));
 
 // record answer and move on to next question
@@ -63,6 +64,7 @@ $(".next").click(function() {
       questionIndex += 1;
       showQuestion(questionIndex);
       $(".next").removeClass("active");
+      $(".next").attr("disabled", true);
       // Change button text on last question
       if (questionIndex == quizData.length - 1) {
         $(".next").html("FINISH");

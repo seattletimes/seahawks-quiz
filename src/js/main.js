@@ -10,6 +10,7 @@ ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
 
 var showQuestion = function(index) {
+  $(".index").html((index + 1) + " of " + quizData.length);
   $(".question-box").html(ich.quizTemplate(quizData[index]));
 };
 

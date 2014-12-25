@@ -27,17 +27,16 @@ You're better off sticking with either `for (var i = 0; i < arr.length; i++) { .
  --Thomas
 */
   answers.forEach(function(answer) {
-    var answer = answers[index];
-    playerData.forEach(function(player) {
+    for (var name in playerData) {
+      var player = playerData[name];
       var playerAnswers = player.answers;
       //$.inArray just calls indexOf, but in a slower and more annoying way
       var match = playerAnswers.indexOf(answer);
       if (match > -1) {
-        var name = playerData[player].name;
         if (!scores[name]) scores[name] = 0;
         scores[name] += 1;
       }
-    });
+    };
   });
   // find highest match(es)
   var highestScore = 0;

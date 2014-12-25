@@ -17,18 +17,28 @@ var showQuestion = function(index) {
 var calculateResult = function() {
   // compare user answers with player answers
   var scores = {};
-  for (var index in answers) {
+/*
+Three reasons why using for...in for arrays (as opposed to objects) is a bad idea:
+  - you're not guaranteed the keys will show up in the right order
+  - if someone shims new properties on Array.prototype, they'll show up in your loop
+  - it's slower than regular numerical looping
+You're better off sticking with either `for (var i = 0; i < arr.length; i++) { ... }` or forEach(). I think the latter is easier to follow, personally.
+
+ --Thomas
+*/
+  answers.forEach(function(answer) {
     var answer = answers[index];
-    for (var player in playerData) {
-      var playerAnswers = playerData[player].answers;
-      var match = $.inArray(answer, playerAnswers);
+    playerData.forEach(function(player) {
+      var playerAnswers = player.answers;
+      //$.inArray just calls indexOf, but in a slower and more annoying way
+      var match = playerAnswers.indexOf(answer);
       if (match > -1) {
         var name = playerData[player].name;
         if (!scores[name]) scores[name] = 0;
         scores[name] += 1;
       }
-    }
-  }
+    });
+  });
   // find highest match(es)
   var highestScore = 0;
   var highestNames = [];

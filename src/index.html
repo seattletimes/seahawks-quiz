@@ -10,15 +10,31 @@
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
-    
-    <div class="title"><span class="blue">SEAHAWKS</span> <span class="green">PERSONALITY QUIZ</span></div>
 
-    <div class="quiz-box"> 
-    <div class="index"></div> 
-      <div class="question-box"></div>
-      <button id="next" class="next" disabled>NEXT</button>
+    <div class="ad"><%= t.include("partials/_adTop.html") %></div>
+
+    <nav class="top-bar">
+      <a class="logo" href="http://seattletimes.com">
+        <img src="./assets/seattletimeslogo.gif">
+      </a>
+    </nav>
+    
+    <div class="title"><span class="blue">WHICH SEAHAWK</span> <span class="green">ARE YOU?</span></div>
+
+    <div class="chatter">Take our personality quiz and find out.</div>
+
+    <div class="container">
+      <div class="quiz-box"> 
+        <div class="index"></div> 
+        <div class="question-box"></div>
+        <button id="next" class="next" disabled>NEXT</button>
+      </div>
     </div>
     
+    <section class="tower-ad">
+      <%= t.include("partials/_adRight.html") %>
+    </section>
+
     <script>
       var quizData = <%= JSON.stringify(json.SeahawksQuiz_Dummy_Data) %>
       var playerData = <%= JSON.stringify(json.player_answers) %>

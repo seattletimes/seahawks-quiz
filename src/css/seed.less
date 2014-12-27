@@ -7,7 +7,8 @@
 
 @import "page";
 
-@mobile: ~"(max-width: 750px)";
+@mobile: ~"(max-width: 480px)";
+@tablet: ~"(max-width: 750px)";
 @navy: #00163f;
 @green: #1cce3c;
 @gray: #a5a7af;
@@ -20,20 +21,25 @@ body {
 
 .container {
   float: left;
-  width: calc(~"100% - 320px")
+  width: calc(~"100% - 360px");
+  margin: 0 20px;
+
+  @media @tablet {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .quiz-box {
-  height: 500px;
-  width: 750px;
+  height: 100%;
+  width: 100%;
+  max-width: 750px;
   padding: 50px;
   border: 7px solid @navy;
   margin: auto;
   background: white;
 
   @media @mobile {
-    border: 0;
-    border-top: 5px solid @navy;
     width: 100%;
     padding: 25px;
   }

@@ -38,6 +38,11 @@ nav.top-bar {
 
   .green {
     color: @green;
+
+    @media @mobile {
+      display: block;
+      font-size: 35px;
+    }
   }
 }
 
@@ -64,4 +69,8 @@ nav.top-bar {
 section.tower-ad {
   width: 320px;
   float: right;
+
+  @media @tablet {
+    display: none;
+  }
 }

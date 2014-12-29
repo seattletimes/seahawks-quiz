@@ -23,7 +23,7 @@
 
     <div class="chatter">Take our personality quiz and find out!</div>
 
-    <div class="container">
+    <div class="quiz-container">
       <div class="quiz-box"> 
         <div class="index"></div> 
         <div class="question-box"></div>
@@ -31,9 +31,9 @@
       </div>
     </div>
     
-    <section class="tower-ad">
+    <div class="tower-ad">
       <%= t.include("partials/_adRight.html") %>
-    </section>
+    </div>
 
     <script>
       var quizData = <%= JSON.stringify(json.SeahawksQuiz_Dummy_Data) %>

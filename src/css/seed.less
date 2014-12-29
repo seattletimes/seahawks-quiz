@@ -17,9 +17,16 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   background: #EEE;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+
+  @media @tablet {
+    margin: 20px;
+  }
 }
 
-.container {
+.quiz-container {
   float: left;
   width: calc(~"100% - 360px");
   margin: 0 20px;
@@ -37,6 +44,7 @@ body {
   padding: 50px;
   border: 7px solid @navy;
   margin: auto;
+  margin-bottom: 30px;
   background: white;
 
   @media @mobile {
@@ -105,11 +113,11 @@ body {
   }
 
   .result-image {
-    width: 50%;
+    width: 100%;
     margin: auto;
 
     img {
-      height: 200px;
+      width: 100%;
     }
   }
 

@@ -3,15 +3,56 @@
 var $ = require("jquery");
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
+var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 
 // Set up templates
 ich.addTemplate("quizTemplate", quizTemplate);
+ich.addTemplate("questionTemplate", questionTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
+
+var setup = function() {
+  answers = [];
+  questionIndex = 0;
+  $(".quiz-container").html(ich.quizTemplate());
+  showQuestion(questionIndex);
+  watchInput();
+  watchNext();
+};
 
 var showQuestion = function(index) {
   $(".index").html((index + 1) + " of " + quizData.length);
-  $(".question-box").html(ich.quizTemplate(quizData[index]));
+  $(".question-box").html(ich.questionTemplate(quizData[index]));
+};
+
+var watchInput = function() {
+// show next button when answer is selected
+  $(".quiz-box").on("click", "input", (function(){
+    $(".next").addClass("active");
+    $(".next").attr("disabled", false);
+  }));
+};
+
+var watchNext = function() {
+  // record answer and move on to next question
+  $(".next").click(function() {
+    if ($("input:checked")) {
+      answers.push($("input:checked")[0].id);
+
+      if (questionIndex < quizData.length - 1) {
+        questionIndex += 1;
+        showQuestion(questionIndex);
+        $(".next").removeClass("active");
+        $(".next").attr("disabled", true);
+        // Change button text on last question
+        if (questionIndex == quizData.length - 1) {
+          $(".next").html("FINISH");
+        }
+      } else {
+        calculateResult();
+      }
+    }
+  });
 };
 
 var calculateResult = function() {
@@ -52,35 +93,13 @@ You're better off sticking with either `for (var i = 0; i < arr.length; i++) { .
   var result = highestNames[random];
   // display result
   $(".quiz-box").html(ich.resultTemplate(playerData[result]));
+
+  $(".retake").click(function() {
+    setup();
+  });
 };
 
 // setup
-var answers = [];
-var questionIndex = 0;
-showQuestion(questionIndex);
-
-// show next button when answer is selected
-$(".quiz-box").on("click", "input", (function(){
-  $(".next").addClass("active");
-  $(".next").attr("disabled", false);
-}));
-
-// record answer and move on to next question
-$(".next").click(function() {
-  if ($("input:checked")) {
-    answers.push($("input:checked")[0].id);
-
-    if (questionIndex < quizData.length - 1) {
-      questionIndex += 1;
-      showQuestion(questionIndex);
-      $(".next").removeClass("active");
-      $(".next").attr("disabled", true);
-      // Change button text on last question
-      if (questionIndex == quizData.length - 1) {
-        $(".next").html("FINISH");
-      }
-    } else {
-      calculateResult();
-    }
-  }
-});
+var answers;
+var questionIndex;
+setup();

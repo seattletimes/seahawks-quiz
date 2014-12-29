@@ -1,0 +1,8 @@
+<div class="question">{{question}}</div>
+
+{{#answers}}
+  <p>
+    <input type="radio" name="answer" id="{{.}}">
+    <label for="{{.}}">{{.}}</label>
+  </p>
+{{/answers}}

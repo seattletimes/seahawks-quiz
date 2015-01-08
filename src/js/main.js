@@ -9,6 +9,15 @@ var questionTemplate = require("./_questionTemplate.html");
 ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("questionTemplate", questionTemplate);
 
+// Share button
+var Share = require("share");
+
+new Share(".share-button", {
+  ui: {
+    flyout: "bottom left"
+  }
+});
+
 var setup = function() {
   scores = {};
   id = 1;
@@ -40,8 +49,6 @@ var watchNext = function() {
       if (!scores[point]) { scores[point] = 0 }
         scores[point] += 1;
     });
-
-    console.log(scores)
 
     // move on to next question
     if (id < Object.keys(quizData).length) {
@@ -77,8 +84,6 @@ var calculateResult = function() {
     if (player.playerid != resultId) return;
     result = player;
   });
-
-  console.log(result)
 
   // display result
   var redirect = window.location.href + result.url + ".html";

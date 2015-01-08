@@ -32,6 +32,7 @@
         <p class="result-description"><%= description %></p>
 
         <a href="." class="retake active">RETAKE QUIZ</a>
+        <a class="share-button"></a>
       </div>
       
     </div>
@@ -42,6 +43,18 @@
 
     <% /*= grunt.template.include("partials/_adFoot.html"); */ %>
     <%= grunt.template.include("partials/_workHere.html") %>
+
+    <script src="assets/share.min.js"></script>
+    <script>
+      new Share(".share-button", {
+        title: "Dis is a title",
+        description: "I got <%= player %>! Whicdsdsh Seahawk are YOU?",
+        image: "<%= image %>",
+        ui: {
+          flyout: "top right"
+        }
+      });
+    </script>
 
   </body>
 </html>

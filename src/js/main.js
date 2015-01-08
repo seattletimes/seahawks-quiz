@@ -91,12 +91,10 @@ You're better off sticking with either `for (var i = 0; i < arr.length; i++) { .
   // choose randomly from highest matches
   var random = Math.round(Math.random() * (highestNames.length - 1));
   var result = highestNames[random];
+  
   // display result
-  $(".quiz-box").html(ich.resultTemplate(playerData[result]));
-
-  $(".retake").click(function() {
-    setup();
-  });
+  var redirect = window.location.href + playerData[result].url + ".html";
+  window.location.href = redirect;
 };
 
 // setup

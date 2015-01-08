@@ -4,20 +4,23 @@
     "image": "http://seattletimes.wpengine.netdna-cdn.com/seahawks/files/2014/01/russell-620x407.jpg",
     "credit": "Dean Rutz",
     "description": "You are polished and have natural leadership ability. You project an air of calm and cool.",
-    "answers": [ "Blue", "Chocolate", "1,000,000" ]
+    "answers": [ "Blue", "Chocolate", "1,000,000" ],
+    "url": "wilson"
   },
   "Golden Tate" : {
     "name": "Golden Tate",
     "image": "http://seattletimes.wpengine.netdna-cdn.com/seahawks/files/2014/01/Golden-620x413.jpg",
     "credit": "Bettina Hansen",
     "description": "You’re thoughtful and well-intentioned most of the time. But you also have a hard-nosed, aggressive style that complements your desire to focus on the nuances of becoming great at what you do.",
-    "answers": [ "Blue", "Vanilla", "2,000,000" ]
+    "answers": [ "Blue", "Vanilla", "2,000,000" ],
+    "url": "tate"
   },
   "Richard Sherman" : {
     "name": "Richard Sherman",
     "image": "http://seattletimes.wpengine.netdna-cdn.com/seahawks/files/2014/01/richard-620x438.jpg",
     "credit": "John Lok",
     "description": "You are loud and brash, never at a loss for words. You are good at what you do, but why let that speak for itself when you can, too?",
-    "answers": [ "Red", "Strawberry", "1,000,000" ]
+    "answers": [ "Red", "Strawberry", "1,000,000" ],
+    "url": "sherman"
   }
 }

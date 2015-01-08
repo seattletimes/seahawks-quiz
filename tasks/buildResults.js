@@ -10,14 +10,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask("buildResults", "Build results pages", function() {
     var template = grunt.file.read("src/_result.html");
-    var answers = grunt.data.json.player_answers;
-    for (var name in answers) { 
-      var player = answers[name];
+    var players = grunt.data.json.SeahawksQuiz2015_Players;
+    players.forEach(function(player) {
       var output = grunt.template.process(template, { data: player });
       grunt.file.write("build/" + player.url + ".html", output);
-    }
-
-
+    });
   });
-
 }

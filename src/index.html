@@ -30,8 +30,26 @@
     </div>
 
     <script>
-      var quizData = <%= JSON.stringify(json.SeahawksQuiz_Dummy_Data) %>
-      var playerData = <%= JSON.stringify(json.player_answers) %>
+      <% 
+        var quizData = {};
+        json.SeahawksQuiz2015_Questions.forEach(function(q) {
+          var id = q.questionid;
+          var question = q.question;
+          quizData[id] = { "question": question };
+        });
+        json.SeahawksQuiz2015_Answers.forEach(function(a, index) {
+          var id = a.questionid;
+          if (!quizData[id].answers) { quizData[id].answers = [] }
+          var answer = { 
+            "answer": a.answer,
+            "playerIds": a.playerids,
+            "id": index
+          };
+          quizData[id].answers.push(answer);
+        });
+      %>
+      var quizData = <%= JSON.stringify(quizData) %>
+      var playerData = <%= JSON.stringify(json.SeahawksQuiz2015_Players) %>
     </script>
     <script src="app.js"></script>
     <% /*= t.include("partials/_adFoot.html"); */ %>

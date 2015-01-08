@@ -10,17 +10,17 @@ ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("questionTemplate", questionTemplate);
 
 var setup = function() {
-  answers = [];
-  questionIndex = 0;
+  scores = {};
+  id = 1;
   $(".quiz-container").html(ich.quizTemplate());
   showQuestion(questionIndex);
   watchInput();
   watchNext();
 };
 
-var showQuestion = function(index) {
-  $(".index").html((index + 1) + " of " + quizData.length);
-  $(".question-box").html(ich.questionTemplate(quizData[index]));
+var showQuestion = function(questionId) {
+  $(".index").html(id + " of " + Object.keys(quizData).length);
+  $(".question-box").html(ich.questionTemplate(quizData[id]));
 };
 
 var watchInput = function() {
@@ -32,70 +32,60 @@ var watchInput = function() {
 };
 
 var watchNext = function() {
-  // record answer and move on to next question
   $(".next").click(function() {
-    if ($("input:checked")) {
-      answers.push($("input:checked")[0].id);
+    // score answer
+    var playerPoints = $("input:checked").val().split(" ");
+    playerPoints.forEach(function(point) {
+      if (point == "") return;
+      if (!scores[point]) { scores[point] = 0 }
+        scores[point] += 1;
+    });
 
-      if (questionIndex < quizData.length - 1) {
-        questionIndex += 1;
-        showQuestion(questionIndex);
-        $(".next").removeClass("active");
-        $(".next").attr("disabled", true);
-        // Change button text on last question
-        if (questionIndex == quizData.length - 1) {
-          $(".next").html("FINISH");
-        }
-      } else {
-        calculateResult();
+    console.log(scores)
+
+    // move on to next question
+    if (id < Object.keys(quizData).length) {
+      id += 1;
+      showQuestion(id);
+      $(".next").removeClass("active");
+      $(".next").attr("disabled", true);
+      // Change button text on last question
+      if (id == Object.keys(quizData).length) {
+        $(".next").html("FINISH");
       }
+    } else {
+      calculateResult();
     }
   });
 };
 
 var calculateResult = function() {
-  // compare user answers with player answers
-  var scores = {};
-/*
-Three reasons why using for...in for arrays (as opposed to objects) is a bad idea:
-  - you're not guaranteed the keys will show up in the right order
-  - if someone shims new properties on Array.prototype, they'll show up in your loop
-  - it's slower than regular numerical looping
-You're better off sticking with either `for (var i = 0; i < arr.length; i++) { ... }` or forEach(). I think the latter is easier to follow, personally.
-
- --Thomas
-*/
-  answers.forEach(function(answer) {
-    for (var name in playerData) {
-      var player = playerData[name];
-      var playerAnswers = player.answers;
-      //$.inArray just calls indexOf, but in a slower and more annoying way
-      var match = playerAnswers.indexOf(answer);
-      if (match > -1) {
-        if (!scores[name]) scores[name] = 0;
-        scores[name] += 1;
-      }
-    };
-  });
   // find highest match(es)
   var highestScore = 0;
-  var highestNames = [];
-  for (var player in scores) {
-    if (scores[player] >= highestScore) {
-      highestNames.push(player);
-      highestScore = scores[player];
+  var highestPlayers = [];
+  for (var score in scores) {
+    if (scores[score] >= highestScore) {
+      highestPlayers.push(score);
+      highestScore = scores[score];
     }
   }
-  // choose randomly from highest matches
-  var random = Math.round(Math.random() * (highestNames.length - 1));
-  var result = highestNames[random];
+
+  var random = Math.round(Math.random() * (highestPlayers.length - 1));
+  var resultId = highestPlayers[random];
+  var result;
+  playerData.forEach(function(player) {
+    if (player.playerid != resultId) return;
+    result = player;
+  });
+
+  console.log(result)
 
   // display result
-  var redirect = window.location.href + playerData[result].url + ".html";
+  var redirect = window.location.href + result.url + ".html";
   window.location.href = redirect;
 };
 
 // setup
-var answers;
+var scores;
 var questionIndex;
 setup();

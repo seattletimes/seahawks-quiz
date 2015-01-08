@@ -1,0 +1,278 @@
+[
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Yes, definitely.",
+    "playerids": "3 29"
+  },
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Sometimes.",
+    "playerids": "25 72 89"
+  },
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Not my defining trait.",
+    "playerids": "4"
+  },
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Thanks for asking.",
+    "playerids": "24"
+  },
+  {
+    "title": "2",
+    "questionid": "2",
+    "answer": "Is the sky blue?",
+    "playerids": "25"
+  },
+  {
+    "title": "2",
+    "questionid": "2",
+    "answer": "Definitely, but I pick my moments.",
+    "playerids": "72"
+  },
+  {
+    "title": "2",
+    "questionid": "2",
+    "answer": "Yeah.",
+    "playerids": "24"
+  },
+  {
+    "title": "2",
+    "questionid": "2",
+    "answer": "Just a little.",
+    "playerids": "3 89"
+  },
+  {
+    "title": "2",
+    "questionid": "2",
+    "answer": "Never, I just focus on my job.",
+    "playerids": "4"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "President.",
+    "playerids": "3"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "Social worker.",
+    "playerids": "24"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "Football coach.",
+    "playerids": "29"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "MLS player.",
+    "playerids": "4"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "SportsCenter analyst.",
+    "playerids": "25 89"
+  },
+  {
+    "title": "4",
+    "questionid": "4",
+    "answer": "Very stylish.",
+    "playerids": "29"
+  },
+  {
+    "title": "4",
+    "questionid": "4",
+    "answer": "I know how to look good.",
+    "playerids": "3 25"
+  },
+  {
+    "title": "4",
+    "questionid": "4",
+    "answer": "Clothes are clothes. I don't get gussied up.",
+    "playerids": "24 79"
+  },
+  {
+    "title": "5",
+    "questionid": "5",
+    "answer": "West Coast, Best Coast.",
+    "playerids": "25 24"
+  },
+  {
+    "title": "5",
+    "questionid": "5",
+    "answer": "The South, y'all.",
+    "playerids": "72 29 89"
+  },
+  {
+    "title": "5",
+    "questionid": "5",
+    "answer": "East Coast bias.",
+    "playerids": "3 4"
+  },
+  {
+    "title": "5",
+    "questionid": "5",
+    "answer": "Midwest.",
+    "playerids": ""
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "I'm nervous.",
+    "playerids": "24"
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "I'm getting by.",
+    "playerids": "4"
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "My last bonus feels like a while ago.",
+    "playerids": "29"
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "I'm bullish on the future.",
+    "playerids": "3"
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "I've got a nice cushion.",
+    "playerids": "89 72"
+  },
+  {
+    "title": "6",
+    "questionid": "6",
+    "answer": "I'm living like a king.",
+    "playerids": "25"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "I'm a savvy PR guy.",
+    "playerids": "3"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "I'm the best talker in the game.",
+    "playerids": "25"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "I like to clown around.",
+    "playerids": "89"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "Thanks for asking.",
+    "playerids": "24"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "I like to be real.",
+    "playerids": "29 72"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "What media?",
+    "playerids": "4"
+  },
+  {
+    "title": "8",
+    "questionid": "8",
+    "answer": "I can bust moves on the dance floor.",
+    "playerids": "25"
+  },
+  {
+    "title": "8",
+    "questionid": "8",
+    "answer": "People of all ages can hang with me.",
+    "playerids": "3"
+  },
+  {
+    "title": "8",
+    "questionid": "8",
+    "answer": "My belly has a mind of its own.",
+    "playerids": "72"
+  },
+  {
+    "title": "8",
+    "questionid": "8",
+    "answer": "My feet are quick.",
+    "playerids": "4 24"
+  },
+  {
+    "title": "8",
+    "questionid": "8",
+    "answer": "I don't dance in public.",
+    "playerids": "29 89"
+  },
+  {
+    "title": "9",
+    "questionid": "9",
+    "answer": "Introvert.",
+    "playerids": "24 89 4"
+  },
+  {
+    "title": "9",
+    "questionid": "9",
+    "answer": "Extrovert.",
+    "playerids": "25 29 72"
+  },
+  {
+    "title": "9",
+    "questionid": "9",
+    "answer": "Depends on the situation.",
+    "playerids": "3"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "I play sports.",
+    "playerids": "4 3"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "I play music.",
+    "playerids": ""
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "I like to travel.",
+    "playerids": "72 89"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "I read books.",
+    "playerids": "25"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "I'm a homebody.",
+    "playerids": "24"
+  }
+]

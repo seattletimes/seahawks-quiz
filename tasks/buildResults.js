@@ -10,7 +10,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask("buildResults", "Build results pages", function() {
     var template = grunt.file.read("src/_result.html");
-    console.log(grunt.data.json)
     var answers = grunt.data.json.player_answers;
     for (var name in answers) { 
       var player = answers[name];

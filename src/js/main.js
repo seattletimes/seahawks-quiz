@@ -4,12 +4,10 @@ var $ = require("jquery");
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
 var questionTemplate = require("./_questionTemplate.html");
-var resultTemplate = require("./_resultTemplate.html");
 
 // Set up templates
 ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("questionTemplate", questionTemplate);
-ich.addTemplate("resultTemplate", resultTemplate);
 
 var setup = function() {
   answers = [];
@@ -91,7 +89,7 @@ You're better off sticking with either `for (var i = 0; i < arr.length; i++) { .
   // choose randomly from highest matches
   var random = Math.round(Math.random() * (highestNames.length - 1));
   var result = highestNames[random];
-  
+
   // display result
   var redirect = window.location.href + playerData[result].url + ".html";
   window.location.href = redirect;

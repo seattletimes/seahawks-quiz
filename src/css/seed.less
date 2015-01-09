@@ -12,11 +12,13 @@
 @navy: #00163f;
 @green: #1cce3c;
 @gray: #a5a7af;
+@block: 'Paytone One', sans-serif;
+@narrow: 'Oswald', sans-serif;
 
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
-  background: #EEE;
+  background: white;
   max-width: 1200px;
   margin: auto;
   margin-top: 20px;
@@ -24,6 +26,10 @@ body {
   @media @tablet {
     margin: 20px;
   }
+}
+
+.illustration {
+  width: 100%;
 }
 
 .quiz-container {
@@ -53,12 +59,12 @@ body {
   }
 
   .index {
-    font-family: "Oswald";
+    font-family: @narrow;
     color: @gray;
   }
 
   .question {
-    font-family: "Oswald";
+    font-family: @block;
     font-size: 21px;
     color: @navy;
   }
@@ -75,6 +81,7 @@ body {
       -moz-osx-font-smoothing: grayscale;
       content: "\f1db";
       margin-right: 4px;
+      
     }
 
     &:checked + label::before {
@@ -123,7 +130,7 @@ body {
   }
 
   .result-name {
-    font-family: "Oswald";
+    font-family: @narrow;
     font-size: 25px;
     text-align: center;
   }

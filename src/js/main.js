@@ -4,14 +4,15 @@ var $ = require("jquery");
 var ich = require("icanhaz");
 var quizTemplate = require("./_quizTemplate.html");
 var questionTemplate = require("./_questionTemplate.html");
+var resultTemplate = require("./_resultTemplate.html");
 
 // Set up templates
 ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("questionTemplate", questionTemplate);
+ich.addTemplate("resultTemplate", resultTemplate);
 
 // Share button
 var Share = require("share");
-
 new Share(".share-button", {
   ui: {
     flyout: "bottom left"
@@ -86,8 +87,7 @@ var calculateResult = function() {
   });
 
   // display result
-  var redirect = window.location.href + result.url + ".html";
-  window.location.href = redirect;
+  $(".quiz-box").html(ich.resultTemplate(result));
 };
 
 // setup

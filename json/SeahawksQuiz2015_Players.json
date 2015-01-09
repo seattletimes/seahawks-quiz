@@ -5,7 +5,8 @@
     "playerid": "3",
     "url": "wilson",
     "description": "You are polished and have natural leadership ability. You project an air of calm and cool.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/wilson.jpg",
+    "photographer": "Dean Rutz"
   },
   {
     "title": "Marshawn Lynch",
@@ -13,7 +14,8 @@
     "playerid": "24",
     "url": "lynch",
     "description": "You are quiet, an enigma perhaps. But there’s clearly a deep reservoir of emotions churning within you. To your peers, you are universally beloved because they find you authentic.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/lynch.jpg",
+    "photographer": "Mike Siegel"
   },
   {
     "title": "Earl Thomas",
@@ -21,7 +23,8 @@
     "playerid": "29",
     "url": "thomas",
     "description": "You are a meticulous planner and have a ferocious drive to not only be the best at what you do, but also redefine your line of work.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/thomas.jpg",
+    "photographer": "John Lok"
   },
   {
     "title": "Richard Sherman",
@@ -29,7 +32,8 @@
     "playerid": "25",
     "url": "sherman",
     "description": "You are loud and brash, never at a loss for words. You are good at what you do, but why let that speak for itself when you can, too?",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/sherman.jpg",
+    "photographer": "John Lok"
   },
   {
     "title": "Doug Baldwin",
@@ -37,7 +41,8 @@
     "playerid": "89",
     "url": "baldwin",
     "description": "You are an overachiever with a chip on your shoulder. Everything you have worked for, you have earned.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/baldwin.jpg",
+    "photographer": "Bettina Hansen"
   },
   {
     "title": "Steven Hauschka",
@@ -45,7 +50,8 @@
     "playerid": "4",
     "url": "hauschka",
     "description": "You are steady and consistent, going to great lengths to perfect your craft. You are meticulous and take great satisfaction in a job well done.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/hauschka.jpg",
+    "photographer": "John Lok"
   },
   {
     "title": "Michael Bennett",
@@ -53,6 +59,7 @@
     "playerid": "72",
     "url": "bennett",
     "description": "You are vocal, opinionated and the biggest jokester in your circle of friends. But you also know how to fit in and push others to succeed.",
-    "image": "http://placekitten.com/500/360"
+    "image": "http://apps-stage.seattletimesdata.com/solitary-bird/assets/bennett.jpg",
+    "photographer": "Dean Rutz"
   }
 ]

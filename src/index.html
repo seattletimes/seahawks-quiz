@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald|Lato' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= t.include("partials/_adHead.html") %>
   </head>
@@ -20,14 +20,18 @@
     </nav>
 
     <img class="illustration" src="assets/hawks-quiz.jpg" />
-
-    <a class="corner share-button"></a>
     
     <h1 class="title">Which Seahawk <span class="green big">are you?</span></h1>
 
     <p class="chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Take our personality quiz and find out!</p>
 
-    <div class="quiz-container"></div>
+    <div class="container">
+      <div class="quiz-container"></div>
+      <div class="buttons">
+        <a href="." class="retake active"><i class="fa fa-undo"></i> RETAKE QUIZ</a>
+        <a class="share-button"></a>
+      </div>
+    </div>
     
     <div class="tower-ad">
       <%= t.include("partials/_adRight.html") %>

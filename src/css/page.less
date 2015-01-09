@@ -2,6 +2,10 @@ nav.top-bar {
   border-bottom: 1px solid @gray;
   position: relative;
 
+  @media @mobile {
+    margin-top: -25px;
+  }
+
   .logo {
     width: 100%;
     position: relative;
@@ -81,12 +85,6 @@ footer {
 
 .share-button, .share-results {
   display: inline-block !important;
-
-  &.corner {
-    position: absolute;
-    top: 15px;
-    right: 8px;
-  }
 
   &.sharer-0 label {
     color: white !important;

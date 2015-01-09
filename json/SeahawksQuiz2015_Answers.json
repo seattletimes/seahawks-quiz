@@ -98,8 +98,8 @@
   {
     "title": "4",
     "questionid": "4",
-    "answer": "Clothes are clothes. I don't get gussied up.",
-    "playerids": "24 79"
+    "answer": "Clothes are clothes. I don’t get gussied up.",
+    "playerids": "24 72"
   },
   {
     "title": "5",
@@ -110,7 +110,7 @@
   {
     "title": "5",
     "questionid": "5",
-    "answer": "The South, y'all.",
+    "answer": "The South, y’all.",
     "playerids": "72 29 89"
   },
   {
@@ -128,13 +128,13 @@
   {
     "title": "6",
     "questionid": "6",
-    "answer": "I'm nervous.",
+    "answer": "I’m nervous.",
     "playerids": "24"
   },
   {
     "title": "6",
     "questionid": "6",
-    "answer": "I'm getting by.",
+    "answer": "I’m getting by.",
     "playerids": "4"
   },
   {
@@ -146,31 +146,31 @@
   {
     "title": "6",
     "questionid": "6",
-    "answer": "I'm bullish on the future.",
+    "answer": "I’m bullish on the future.",
     "playerids": "3"
   },
   {
     "title": "6",
     "questionid": "6",
-    "answer": "I've got a nice cushion.",
+    "answer": "I’ve got a nice cushion.",
     "playerids": "89 72"
   },
   {
     "title": "6",
     "questionid": "6",
-    "answer": "I'm living like a king.",
+    "answer": "I’m living like a king.",
     "playerids": "25"
   },
   {
     "title": "7",
     "questionid": "7",
-    "answer": "I'm a savvy PR guy.",
+    "answer": "I’m a savvy PR guy.",
     "playerids": "3"
   },
   {
     "title": "7",
     "questionid": "7",
-    "answer": "I'm the best talker in the game.",
+    "answer": "I’m the best talker in the game.",
     "playerids": "25"
   },
   {
@@ -224,7 +224,7 @@
   {
     "title": "8",
     "questionid": "8",
-    "answer": "I don't dance in public.",
+    "answer": "I don’t dance in public.",
     "playerids": "29 89"
   },
   {
@@ -272,7 +272,7 @@
   {
     "title": "10",
     "questionid": "10",
-    "answer": "I'm a homebody.",
+    "answer": "I’m a homebody.",
     "playerids": "24"
   }
 ]

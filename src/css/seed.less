@@ -25,12 +25,14 @@ body {
   padding: 10px;
 
   @media @tablet {
-    padding: 4px;
+    font-size: 16px;
+    padding: 0;
   }
 }
 
 .illustration {
   width: 100%;
+  position: relative;
 }
 
 .quiz-container {
@@ -46,6 +48,7 @@ body {
   @media @tablet {
     width: 100%;
     margin: 0;
+    padding: 0 8px;
   }
 
   .buttons {
@@ -63,13 +66,16 @@ body {
   margin: 0 auto 30px;
 
   @media @mobile {
-    width: 100%;
-    padding: 25px;
+    padding: 10px;
   }
 
   .index {
     font-family: @block;
     color: @gray;
+  }
+
+  .question-box {
+    margin-bottom: 1em;
   }
 
   .question {
@@ -119,8 +125,9 @@ body {
     .credit {
       margin: 0;
       float: right;
-      font-size: 14px;
+      font-size: 12px;
       font-family: Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
       color: @dark-gray;
     }
   }

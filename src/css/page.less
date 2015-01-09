@@ -1,9 +1,14 @@
 nav.top-bar {
   border-bottom: 1px solid @gray;
   position: relative;
+  z-index: 99;
 
   @media @mobile {
-    margin-top: -25px;
+    border: none;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    background: @green;
   }
 
   .logo {
@@ -13,42 +18,62 @@ nav.top-bar {
     text-align: center;
     display: block;
 
+    @media @mobile {
+      top: 0;
+
+    }
+
     img {
       box-sizing: content-box;
       height: 30px;
       background: @green;
       padding: 10px;
       border: none;
+
+      @media @mobile {
+        background: none;
+        padding: 5px;
+      }
     }
   }
 }
 
-.title {
-  font-family: @block;
-  color: @blue;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 3em;
-  line-height: 1.2em;
-  margin: 5px auto 0.5em;
-  text-align: center;
 
-  .green {
-    font-size: 1.8em;
-    display: block;
+header {
+  width: 100%;
+  padding: 0 8px; 
+
+  .title {
+    font-family: @block;
+    color: @blue;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 1.2em;
+    margin: 5px auto 0.5em;
+    text-align: center;
 
     @media @mobile {
-      font-size: inherit;
+      line-height: 1em;
+      margin-bottom: 0;
+    }
+
+    .green {
+      font-size: 1.8em;
+      display: block;
+
+      @media @mobile {
+        font-size: inherit;
+      }
     }
   }
-}
 
-.chatter {
-  color: @dark-gray;
-  font-family: @narrow;
-  font-size: 1.2em;
-  text-align: center;
-  padding-bottom: 18px;
+  .chatter {
+    color: @dark-gray;
+    font-family: @narrow;
+    font-size: 1.2em;
+    text-align: center;
+  }
 }
 
 .ad {
@@ -80,6 +105,10 @@ footer {
   clear: both;
   margin: 1em auto;
   padding-top: 1em;
+
+  @media @mobile {
+    padding-top: 0;
+  }
 }
 
 .share-button, .share-results {

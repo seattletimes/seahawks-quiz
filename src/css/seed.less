@@ -9,7 +9,6 @@
 
 @mobile: ~"(max-width: 480px)";
 @tablet: ~"(max-width: 750px)";
-@navy: #00163f;
 @blue: #164c75;
 //@green: #1cce3c;
 @green: #8eb607;
@@ -38,7 +37,10 @@ body {
 .quiz-container {
   float: left;
   width: calc(~"100% - 360px");
-  margin: 0 20px;
+  margin: 20px;
+  border-top: 8px solid @blue;
+  border-bottom: 8px solid @blue;
+
 
   @media @tablet {
     width: 100%;
@@ -50,12 +52,9 @@ body {
   height: 100%;
   width: 100%;
   font-family: @narrow;
-  max-width: 750px;
-  padding: 50px;
-  border-top: 8px solid @blue;
-  margin: auto;
-  margin-bottom: 30px;
-  background: white;
+  //max-width: 750px;
+  padding: 50px 20px;
+  margin: 0 auto 30px;
 
   @media @mobile {
     width: 100%;
@@ -69,7 +68,7 @@ body {
 
   .question {
     font-family: @block;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: @blue;
   }
 
@@ -117,7 +116,7 @@ body {
     transition: background 0.2s linear;
 
     &.active {
-      background: @navy;
+      background: @blue;
       cursor: pointer;
       
       &:hover {
@@ -136,12 +135,19 @@ body {
   }
 
   .result-name {
-    font-family: @narrow;
-    font-size: 1.6em;
-    text-align: center;
+    font-family: @block;
+    color: @blue;
+    font-size: 2em;
+    margin: 1em 0;
   }
 
   .result-description {
     padding-bottom: 10px;
+    font-size: 1.2em;
+    color: @dark-gray;
   }
+}
+
+.green {
+  color: @green;
 }

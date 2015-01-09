@@ -8,4 +8,6 @@ module.exports = function(grunt) {
   grunt.registerTask("static", "Build all files", ["copy", "bundle", "less", "template"]);
   grunt.registerTask("default", ["static", "connect:dev", "watch"]);
 
+  grunt.registerTask("analyze", ["state", "json", "test"]);
+
 };

@@ -1,5 +1,5 @@
 nav.top-bar {
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid @gray;
   position: relative;
 
   .logo {
@@ -14,30 +14,25 @@ nav.top-bar {
       height: 30px;
       background: white;
       padding: 10px;
-      border: none;
+      border: 1px solid @gray;
     }
   }
 }
 
 .title {
   font-family: @block;
+  color: @blue;
   text-transform: uppercase;
-  font-size: 40px;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin: 5px auto 0.5em;
   text-align: center;
-
-  .blue {
-    color: @navy;
-
-    @media @mobile {
-      display: block;
-      font-size: 25px;
-    }
-  }
 
   .green {
     color: @green;
+    font-size: 1.8em;
+    display: block;
 
     @media @mobile {
       display: block;
@@ -47,7 +42,9 @@ nav.top-bar {
 }
 
 .chatter {
-  color: #333;
+  color: @dark-gray;
+  font-family: @narrow;
+  font-size: 1.2em;
   text-align: center;
   padding-bottom: 18px;
 }
@@ -85,8 +82,8 @@ nav.top-bar {
   }
 
   &.sharer-0 label {
-    color: @green !important;
-    background: @navy !important;
+    color: white !important;
+    background: @blue !important;
     padding: 7px 10px !important;
     font-size: 15px !important;
   }

@@ -85,6 +85,7 @@ var calculateResult = function() {
   // display result
   $(".quiz-box").html(ich.resultTemplate(result));
   $(".retake").removeClass("hidden");
+  $(".buttons").addClass("mobile");
   share.config.description = "I got " + result.player + "! Whicdsdsh Seahawk are YOU?";
   share.config.ui.button_text = "SHARE RESULT";
 };

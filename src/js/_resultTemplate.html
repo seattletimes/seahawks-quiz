@@ -1,19 +1,5 @@
-<div class="result-image"><img src="{{image}}"></div>
-
 <p class="result-name">You are ... <span class="green">{{player}}!</span></p>
 
 <p class="result-description">{{description}}</p>
 
-<a href="." class="retake active">RETAKE QUIZ</a>
-
-<a class="share-results"></a>
-
-<script src="assets/share.min.js"></script>
-<script>
-  new Share(".share-results", {
-    description: "I got {{player}}! Which Seahawk are YOU?",
-    ui: {
-      flyout: "top right"
-    }
-  });
-</script>
+<div class="result-image"><img src="{{image}}"></div>

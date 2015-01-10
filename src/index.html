@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald|Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald:400,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
 
-    <div class="ad"><%= t.include("partials/_adTop.html") %></div>
+    <div class="ad"><%= "no" || t.include("partials/_adTop.html") %></div>
 
     <nav class="top-bar">
       <a class="logo" href="http://seattletimes.com">
@@ -25,20 +25,27 @@
 
     <p class="chatter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Take our personality quiz and find out!</p>
 
-    <div class="container">
-      <div class="quiz-container"></div>
+    <div class="quiz-container">
       <div class="buttons">
-        <a href="." class="retake active"><i class="fa fa-undo"></i> RETAKE QUIZ</a>
+        <a href="." class="hidden retake"><i class="fa fa-undo"></i> <span>RETAKE QUIZ</span></a>
         <a class="share-button"></a>
       </div>
+
+      <div class="quiz-box"> 
+        <div class="index"></div> 
+        <div class="question-box"></div>
+        <button class="next" disabled>NEXT</button>
+      </div>
+
+      <div class="credits"><strong>Foo:</strong> Firstname Lastname, <strong>Interactive:</strong> Audrey Carlsen</div>
     </div>
     
     <div class="tower-ad">
-      <%= t.include("partials/_adRight.html") %>
+      <%= "no" || t.include("partials/_adRight.html") %>
     </div>
 
     <footer>
-      <div class="ad"><%= t.include("partials/_adBottom.html") %></div>
+      <div class="ad"><%= "no" || t.include("partials/_adBottom.html") %></div>
     </footer>
 
     <script>
@@ -64,6 +71,7 @@
       var playerData = <%= JSON.stringify(json.SeahawksQuiz2015_Players) %>
     </script>
     <script src="app.js"></script>
+
     <% /*= t.include("partials/_adFoot.html"); */ %>
     <%= t.include("partials/_workHere.html") %>
 

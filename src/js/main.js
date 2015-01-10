@@ -2,18 +2,15 @@
 
 var $ = require("jquery");
 var ich = require("icanhaz");
-var quizTemplate = require("./_quizTemplate.html");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 
 // Set up templates
-ich.addTemplate("quizTemplate", quizTemplate);
 ich.addTemplate("questionTemplate", questionTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
 
-// Share button
 var Share = require("share");
-new Share(".share-button", {
+var share = new Share(".share-button", {
   ui: {
     flyout: "bottom left"
   }
@@ -22,7 +19,6 @@ new Share(".share-button", {
 var setup = function() {
   scores = {};
   id = 1;
-  $(".quiz-container").html(ich.quizTemplate());
   showQuestion(questionIndex);
   watchInput();
   watchNext();
@@ -88,6 +84,9 @@ var calculateResult = function() {
 
   // display result
   $(".quiz-box").html(ich.resultTemplate(result));
+  $(".retake").removeClass("hidden");
+  share.config.description = "I got " + result.player + "! Whicdsdsh Seahawk are YOU?";
+  share.config.ui.button_text = "SHARE RESULT";
 };
 
 // setup

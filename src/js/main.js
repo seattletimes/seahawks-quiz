@@ -46,7 +46,7 @@ var watchNext = function() {
       if (!scores[point]) { scores[point] = 0 }
         scores[point] += 1;
     });
-    
+
     // move on to next question
     if (id < Object.keys(quizData).length) {
       id += 1;

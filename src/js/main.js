@@ -10,7 +10,7 @@ ich.addTemplate("questionTemplate", questionTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
 
 var Share = require("share");
-var share = new Share(".share-button", {
+new Share(".share-button", {
   ui: {
     flyout: "bottom left"
   }
@@ -85,9 +85,15 @@ var calculateResult = function() {
   // display result
   $(".quiz-box").html(ich.resultTemplate(result));
   $(".retake").removeClass("hidden");
-  $(".buttons").addClass("mobile");
-  share.config.description = "I got " + result.player + "! Whicdsdsh Seahawk are YOU?";
-  share.config.ui.button_text = "SHARE RESULT";
+  $(".quiz-container").addClass("results");
+  new Share(".share-button", {
+    description: "I got " + result.player + "! Which Seahawk are YOU?",
+    ui: {
+      flyout: "bottom left",
+      button_text: "SHARE RESULTS"
+    }
+  });
+  $(".share-button").addClass("share-results");
 };
 
 // setup

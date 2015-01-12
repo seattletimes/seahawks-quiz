@@ -48,16 +48,23 @@ body {
     padding: 0 8px;
   }
 
-  .buttons {
-    float: right;
-    margin-top: 1em;
+  @media @mobile {
+    &.results {
+      .quiz-box {
+        margin-top: -55px;
+      }
 
-    @media @mobile {
-      &.mobile {
+      .buttons {
         float: center;
         text-align: center;
       }
     }
+  }
+
+  .buttons {
+    float: right;
+    margin-top: 1em;
+    height: 0;
 
     .share-button {
       display: inline-block !important;
@@ -67,7 +74,7 @@ body {
         background: @blue !important;
         padding: 10px 10px 6px 10px !important;
 
-        @media @mobile {
+        @media @tablet {
           padding: 8px 10px 4.5px 10px !important;
         }
 
@@ -75,7 +82,7 @@ body {
           font-size: 16px !important;
           font-family: @narrow !important;
 
-          @media @mobile {
+          @media @tablet {
             font-size: 14px !important;
           }
         }
@@ -86,7 +93,20 @@ body {
       }
 
       .social.networks-5.left {
-        margin-left: -160px !important;
+        margin-left: -210px !important;
+      }
+
+      &.share-results {
+        width: 100%;
+        display: inline !important;
+
+        .social.networks-5.left {
+          margin-left: -28px !important;
+
+          @media @mobile {
+            margin-left: 32px !important;
+          }
+        }
       }
     }
 

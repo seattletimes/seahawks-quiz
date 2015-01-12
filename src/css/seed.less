@@ -74,11 +74,13 @@ body {
 
     .share-button {
       display: inline-block !important;
+      width: 100%;
       
       &.sharer-0 label {
         color: white !important;
         background: @blue !important;
         padding: 10px 10px 6px 10px !important;
+        border-radius: 0;
 
         @media @tablet {
           padding: 8px 10px 4.5px 10px !important;
@@ -86,7 +88,8 @@ body {
 
         span {
           font-size: 16px !important;
-          font-family: @narrow !important;
+          font-family: @block !important;
+          font-weight: normal !important;
 
           @media @tablet {
             font-size: 14px !important;
@@ -121,14 +124,12 @@ body {
     }
 
     .retake {
-      font-family: @narrow;
+      font-family: @block;
       display: inline-block;
       text-decoration: none;
-      border-radius: 5px;
       border: none;
       padding: 5px 10px;
       font-size: 0.9em;
-      font-weight: bold;
       -webkit-font-smoothing: antialiased;
       transition: background 0.2s linear;
       background: @blue;
@@ -224,7 +225,8 @@ body {
     font-family: @block;
     color: @dark-gray;
     font-size: 2em;
-    margin: 0;
+    line-height: 1.2em;
+    margin: 0 0 10px 0;
   }
 
   .result-description {
@@ -243,17 +245,15 @@ body {
 }
 
 button {
-  font-family: @narrow;
+  font-family: @block;
   display: inline-block;
   cursor: default;
   text-decoration: none;
   background: #CCC;
   color: white;
-  border-radius: 5px;
   border: none;
   padding: 8px 10px;
   font-size: 0.9em;
-  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   transition: background 0.2s linear;
 

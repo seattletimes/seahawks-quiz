@@ -88,9 +88,14 @@ var calculateResult = function() {
   $(".quiz-container").addClass("results");
   new Share(".share-button", {
     description: "I got " + result.player + "! Which Seahawk are YOU?",
+    image: result.image,
     ui: {
       flyout: "bottom left",
       button_text: "SHARE RESULTS"
+    },
+    facebook: {
+      description: "World",
+      caption: "Hello"
     }
   });
   $(".share-button").addClass("share-results");

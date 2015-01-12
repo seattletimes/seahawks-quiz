@@ -38,18 +38,16 @@ body {
 .quiz-container {
   width: calc(~"100% - 360px");
   float: left;
-  margin: 0 20px;
   border-top: 8px solid @blue;
-  // border-bottom: 8px solid @blue;
 
   @media @tablet {
     width: 100%;
-    margin: 0;
   }
   
   &.results {
     .buttons {
-      height: 0
+      height: 0;
+      margin-right: 0;
     }
 
     .quiz-box {
@@ -61,16 +59,17 @@ body {
         float: center;
         text-align: center;
       }
-
-      .quiz-box {
-        padding-top: 35px;
-      }
     }
   }
 
   .buttons {
     float: right;
     margin-top: 1em;
+
+    @media @tablet {
+      margin-top: 1.5em;
+      margin-right: 1em;
+    }
 
     .share-button {
       display: inline-block !important;
@@ -79,11 +78,11 @@ body {
       &.sharer-0 label {
         color: white !important;
         background: @blue !important;
-        padding: 10px 10px 6px 10px !important;
+        padding: 9px 10px 6px 10px !important;
         border-radius: 0;
 
         @media @tablet {
-          padding: 8px 10px 4.5px 10px !important;
+          padding: 12px 15px 10px 15px !important;
         }
 
         span {
@@ -102,7 +101,7 @@ body {
       }
 
       .social.networks-5.left {
-        margin-left: -220px !important;
+        margin-left: -201px !important;
       }
 
       &.share-results {
@@ -110,14 +109,14 @@ body {
         display: inline !important;
 
         .social.networks-5.left {
-          margin-left: -28px !important;
+          margin-left: 21px !important;
 
           @media @tablet {
-            margin-left: 120px !important;
+            margin-left: 153px !important;
           }
 
            @media @mobile {
-            margin-left: 32px !important;
+            margin-left: 39px !important;
           }
         }
       }
@@ -135,6 +134,10 @@ body {
       background: @blue;
       color: white;
       cursor: pointer;
+
+      @media @tablet {
+        padding: 10px 20px;
+      }
         
       &:hover {
         background: @green;
@@ -155,7 +158,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: @narrow;
-  padding: 30px 20px;
+  padding: 50px 20px 30px 20px;
   margin: 0 auto;
 
   .index {
@@ -252,10 +255,14 @@ button {
   background: #CCC;
   color: white;
   border: none;
-  padding: 8px 10px;
+  padding: 5px 10px;
   font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   transition: background 0.2s linear;
+
+  @media @tablet {
+    padding: 10px 20px;
+  }
 
   &.active {
     background: @blue;

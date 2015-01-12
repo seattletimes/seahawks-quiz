@@ -48,18 +48,18 @@ var watchNext = function() {
     });
 
     // move on to next question
-    if (id < Object.keys(quizData).length) {
-      id += 1;
-      showQuestion(id);
-      $(".next").removeClass("active");
-      $(".next").attr("disabled", true);
-      // Change button text on last question
-      if (id == Object.keys(quizData).length) {
-        $(".next").html("FINISH");
-      }
-    } else {
+    // if (id < Object.keys(quizData).length) {
+    //   id += 1;
+    //   showQuestion(id);
+    //   $(".next").removeClass("active");
+    //   $(".next").attr("disabled", true);
+    //   // Change button text on last question
+    //   if (id == Object.keys(quizData).length) {
+    //     $(".next").html("FINISH");
+    //   }
+    // } else {
       calculateResult();
-    }
+    // }
   });
 };
 
@@ -94,8 +94,7 @@ var calculateResult = function() {
       button_text: "SHARE RESULTS"
     },
     facebook: {
-      description: "World",
-      caption: "Hello"
+      caption: "I got " + result.player + "! Which Seahawk are YOU?"
     }
   });
   $(".share-button").addClass("share-results");

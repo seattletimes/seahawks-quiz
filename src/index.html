@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="ad"><%= "no" || t.include("partials/_adTop.html") %></div>
+    <div class="ad"><%= t.include("partials/_adTop.html") %></div>
 
     <nav class="top-bar">
       <a class="logo" href="http://seattletimes.com">
@@ -39,15 +39,20 @@
         <button class="next" disabled>NEXT</button>
       </div>
 
-      <div class="credits"><strong>Foo:</strong> Firstname Lastname, <strong>Interactive:</strong> Audrey Carlsen</div>
+      <div class="divider"></div>
+
+      <div class="credits">
+        <strong>Foo:</strong> Firstname Lastname, 
+        <strong>Interactive:</strong> Audrey Carlsen
+      </div>
     </div>
     
     <div class="tower-ad">
-      <%= "no" || t.include("partials/_adRight.html") %>
+      <%= t.include("partials/_adRight.html") %>
     </div>
 
     <footer>
-      <div class="ad"><%= "no" || t.include("partials/_adBottom.html") %></div>
+      <div class="ad"><%= t.include("partials/_adBottom.html") %></div>
     </footer>
 
     <script>

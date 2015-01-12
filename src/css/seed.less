@@ -40,23 +40,32 @@ body {
   float: left;
   margin: 0 20px;
   border-top: 8px solid @blue;
-  border-bottom: 8px solid @blue;
+  // border-bottom: 8px solid @blue;
 
   @media @tablet {
     width: 100%;
     margin: 0;
-    padding: 0 8px;
   }
+  
+  &.results {
+    .buttons {
+      height: 0
+    }
 
-  @media @mobile {
-    &.results {
-      .quiz-box {
-        margin-top: -55px;
-      }
-
+    @media @tablet {
       .buttons {
         float: center;
         text-align: center;
+      }
+
+      .quiz-box {
+        margin-top: -15px;
+      }
+    }
+
+    @media @mobile {
+      .quiz-box {
+        margin-top: 25px;
       }
     }
   }
@@ -64,7 +73,6 @@ body {
   .buttons {
     float: right;
     margin-top: 1em;
-    height: 0;
 
     .share-button {
       display: inline-block !important;
@@ -103,7 +111,11 @@ body {
         .social.networks-5.left {
           margin-left: -28px !important;
 
-          @media @mobile {
+          @media @tablet {
+            margin-left: 120px !important;
+          }
+
+           @media @mobile {
             margin-left: 32px !important;
           }
         }
@@ -148,7 +160,7 @@ body {
   margin: 0 auto;
 
   @media @mobile {
-    padding: 10px;
+    padding: 30px 20px;
   }
 
   .index {

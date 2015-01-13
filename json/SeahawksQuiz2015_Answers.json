@@ -2,7 +2,7 @@
   {
     "title": "1",
     "questionid": "1",
-    "answer": "Captain America",
+    "answer": "Captain America (Marvel Comics)",
     "playerids": "3 29"
   },
   {
@@ -176,7 +176,7 @@
   {
     "title": "7",
     "questionid": "7",
-    "answer": "I’m the best talker in the game",
+    "answer": "I use the media as a megaphone",
     "playerids": "25"
   },
   {
@@ -188,13 +188,7 @@
   {
     "title": "7",
     "questionid": "7",
-    "answer": "Thanks for asking",
-    "playerids": "24"
-  },
-  {
-    "title": "7",
-    "questionid": "7",
-    "answer": "I like to be real",
+    "answer": "I keep it real",
     "playerids": "29 72"
   },
   {
@@ -202,6 +196,12 @@
     "questionid": "7",
     "answer": "What media?",
     "playerids": "4"
+  },
+  {
+    "title": "7",
+    "questionid": "7",
+    "answer": "Thanks for asking",
+    "playerids": "24"
   },
   {
     "title": "8",
@@ -218,7 +218,7 @@
   {
     "title": "8",
     "questionid": "8",
-    "answer": "My feet are quick, but can’t vouch for the rest",
+    "answer": "My feet are quick, but I can’t vouch for the rest",
     "playerids": "4 24"
   },
   {
@@ -260,25 +260,25 @@
   {
     "title": "10",
     "questionid": "10",
-    "answer": "The even keel",
-    "playerids": "4"
-  },
-  {
-    "title": "10",
-    "questionid": "10",
-    "answer": "The good conscience",
-    "playerids": "29"
-  },
-  {
-    "title": "10",
-    "questionid": "10",
     "answer": "The firecracker",
     "playerids": "25"
   },
   {
     "title": "10",
     "questionid": "10",
-    "answer": "The brawler",
+    "answer": "The shy one",
+    "playerids": "4"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "The thoughtful one",
+    "playerids": "29"
+  },
+  {
+    "title": "10",
+    "questionid": "10",
+    "answer": "The tough one",
     "playerids": "89"
   },
   {
@@ -332,13 +332,13 @@
   {
     "title": "12",
     "questionid": "12",
-    "answer": "Comraderie",
+    "answer": "Friendship",
     "playerids": "72"
   },
   {
     "title": "12",
     "questionid": "12",
-    "answer": "Perfection",
+    "answer": "Unmatched skill",
     "playerids": "29"
   }
 ]

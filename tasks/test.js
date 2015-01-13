@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
     data.forEach(function(answer) {
       var players = answer.playerids.split(" ");
-      players = players.filter(function(p) {return p != "72" && p != ""});
+      players = players.filter(function(p) {return p != ""});
       var fraction = players.length;
       players.forEach(function(player) {
         if (!playerCounts[player]) { playerCounts[player] = 0 }

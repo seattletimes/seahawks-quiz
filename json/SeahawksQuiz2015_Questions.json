@@ -2,12 +2,12 @@
   {
     "title": "1",
     "questionid": "1",
-    "question": "Do you consider yourself to be a leader?"
+    "question": "Which fictional character do you most relate to?"
   },
   {
     "title": "2",
     "questionid": "2",
-    "question": "Do you like trash talking?"
+    "question": "You run into some 49ers fans at a bar. What do you do?"
   },
   {
     "title": "3",
@@ -17,7 +17,7 @@
   {
     "title": "4",
     "questionid": "4",
-    "question": "How stylish do you like to be?"
+    "question": "Best attire for a date?"
   },
   {
     "title": "5",
@@ -47,6 +47,16 @@
   {
     "title": "10",
     "questionid": "10",
+    "question": "How would your friends describe you?"
+  },
+  {
+    "title": "11",
+    "questionid": "11",
     "question": "What do you do in your spare time?"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "question": "What's your end goal?"
   }
 ]

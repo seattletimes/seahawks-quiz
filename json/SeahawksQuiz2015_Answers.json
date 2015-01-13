@@ -2,19 +2,25 @@
   {
     "title": "1",
     "questionid": "1",
-    "answer": "Yes, definitely",
+    "answer": "Captain America",
     "playerids": "3 29"
   },
   {
     "title": "1",
     "questionid": "1",
-    "answer": "Sometimes",
-    "playerids": "25 72 89"
+    "answer": "Katniss (The Hunger Games)",
+    "playerids": "25 89"
   },
   {
     "title": "1",
     "questionid": "1",
-    "answer": "Not my defining trait",
+    "answer": "Ron Burgundy (Anchorman)",
+    "playerids": "72"
+  },
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Frodo Baggins (The Lord of the Rings)",
     "playerids": "4"
   },
   {
@@ -26,31 +32,31 @@
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Is the sky blue? I live for trash talking",
+    "answer": "Mock them until they leave",
     "playerids": "25"
   },
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Definitely, but I pick my moments",
+    "answer": "Reminisce fondly over Kaepernick’s interceptions",
     "playerids": "72"
   },
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Yeah",
-    "playerids": "24"
+    "answer": "Ask how the coaching search is going",
+    "playerids": "89"
   },
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Maybe a slight burn here and there",
-    "playerids": "3 89"
+    "answer": "Hello, Seattle Freeze: I don’t befriend strangers",
+    "playerids": "3 24"
   },
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Never, I just focus on my job",
+    "answer": "Have a nice conversation about the weather",
     "playerids": "4"
   },
   {
@@ -86,19 +92,19 @@
   {
     "title": "4",
     "questionid": "4",
-    "answer": "Very stylish",
+    "answer": "Something I need to iron",
     "playerids": "29"
   },
   {
     "title": "4",
     "questionid": "4",
-    "answer": "I know how to look good",
+    "answer": "Whatever I wore to work",
     "playerids": "3 25"
   },
   {
     "title": "4",
     "questionid": "4",
-    "answer": "Clothes are clothes, I don’t get gussied up",
+    "answer": "A hoody sweatshirt is more versatile than you’d think",
     "playerids": "24 72"
   },
   {
@@ -206,20 +212,20 @@
   {
     "title": "8",
     "questionid": "8",
-    "answer": "People of all ages can hang with me",
+    "answer": "I’m more of a slow dancer",
     "playerids": "3"
   },
   {
     "title": "8",
     "questionid": "8",
-    "answer": "My belly has a mind of its own",
-    "playerids": "72"
+    "answer": "My feet are quick, but can’t vouch for the rest",
+    "playerids": "4 24"
   },
   {
     "title": "8",
     "questionid": "8",
-    "answer": "My feet are quick",
-    "playerids": "4 24"
+    "answer": "You may need to avert your eyes",
+    "playerids": "72"
   },
   {
     "title": "8",
@@ -248,31 +254,91 @@
   {
     "title": "10",
     "questionid": "10",
-    "answer": "I play sports",
-    "playerids": "4 3"
+    "answer": "The wisecracker",
+    "playerids": "72"
   },
   {
     "title": "10",
     "questionid": "10",
-    "answer": "I play music",
-    "playerids": ""
+    "answer": "The even keel",
+    "playerids": "4"
   },
   {
     "title": "10",
     "questionid": "10",
-    "answer": "I like to travel",
-    "playerids": "72 89"
+    "answer": "The good conscience",
+    "playerids": "29"
   },
   {
     "title": "10",
     "questionid": "10",
-    "answer": "I read books",
+    "answer": "The firecracker",
     "playerids": "25"
   },
   {
     "title": "10",
     "questionid": "10",
+    "answer": "The brawler",
+    "playerids": "89"
+  },
+  {
+    "title": "11",
+    "questionid": "11",
+    "answer": "I play sports",
+    "playerids": "4 3"
+  },
+  {
+    "title": "11",
+    "questionid": "11",
+    "answer": "I play music",
+    "playerids": ""
+  },
+  {
+    "title": "11",
+    "questionid": "11",
+    "answer": "I like to travel",
+    "playerids": "72 89"
+  },
+  {
+    "title": "11",
+    "questionid": "11",
+    "answer": "I read books",
+    "playerids": "25"
+  },
+  {
+    "title": "11",
+    "questionid": "11",
     "answer": "I’m a homebody",
     "playerids": "24"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "answer": "Money",
+    "playerids": "24"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "answer": "Fame",
+    "playerids": "3 25"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "answer": "Recognition",
+    "playerids": "89"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "answer": "Comraderie",
+    "playerids": "72"
+  },
+  {
+    "title": "12",
+    "questionid": "12",
+    "answer": "Perfection",
+    "playerids": "29"
   }
 ]

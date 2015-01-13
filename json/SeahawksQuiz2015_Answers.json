@@ -39,7 +39,7 @@
     "title": "2",
     "questionid": "2",
     "answer": "Reminisce fondly over Kaepernick’s interceptions",
-    "playerids": "72"
+    "playerids": "72 29"
   },
   {
     "title": "2",
@@ -74,20 +74,26 @@
   {
     "title": "3",
     "questionid": "3",
-    "answer": "Football coach",
-    "playerids": "29"
-  },
-  {
-    "title": "3",
-    "questionid": "3",
     "answer": "MLS player",
     "playerids": "4"
   },
   {
     "title": "3",
     "questionid": "3",
+    "answer": "Football coach",
+    "playerids": "29"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
     "answer": "SportsCenter analyst",
-    "playerids": "25 89"
+    "playerids": "25"
+  },
+  {
+    "title": "3",
+    "questionid": "3",
+    "answer": "Sports writer",
+    "playerids": "89"
   },
   {
     "title": "4",
@@ -99,7 +105,7 @@
     "title": "4",
     "questionid": "4",
     "answer": "Whatever I wore to work",
-    "playerids": "3 25"
+    "playerids": "3"
   },
   {
     "title": "4",

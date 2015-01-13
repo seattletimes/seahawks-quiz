@@ -46,7 +46,7 @@ header {
 
   .quiz-label {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-family: @block;
     font-weight: normal;
     color: white;
@@ -54,6 +54,10 @@ header {
     display: inline-block;
     padding: 5px;
     margin: 5px auto 0;
+
+    @media @tablet {
+      font-size: 14px;
+    }
   }
 
   .title {

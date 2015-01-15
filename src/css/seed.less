@@ -39,9 +39,14 @@ body {
   width: calc(~"100% - 360px");
   float: left;
   border-top: 8px solid @blue;
+  margin-top: 20px;
 
   @media @tablet {
     width: 100%;
+  }
+
+  @media @mobile {
+    margin-top: 0;
   }
   
   &.results {

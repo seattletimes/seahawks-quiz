@@ -2,8 +2,14 @@
   {
     "title": "1",
     "questionid": "1",
-    "answer": "Captain America (Marvel Comics)",
-    "playerids": "3 29"
+    "answer": "Captain America",
+    "playerids": "3"
+  },
+  {
+    "title": "1",
+    "questionid": "1",
+    "answer": "Batman ",
+    "playerids": "29"
   },
   {
     "title": "1",
@@ -26,25 +32,25 @@
   {
     "title": "1",
     "questionid": "1",
-    "answer": "The Juggernaut (Marvel Comics)",
+    "answer": "The Juggernaut (X-Men)",
     "playerids": "24"
   },
   {
     "title": "2",
     "questionid": "2",
     "answer": "Mock them until they leave",
-    "playerids": "25"
+    "playerids": "72"
   },
   {
     "title": "2",
     "questionid": "2",
     "answer": "Reminisce fondly over Kaepernick’s interceptions",
-    "playerids": "72 29"
+    "playerids": "25"
   },
   {
     "title": "2",
     "questionid": "2",
-    "answer": "Ask how the coaching search is going",
+    "answer": "Harbaugh who?",
     "playerids": "89"
   },
   {
@@ -68,13 +74,13 @@
   {
     "title": "3",
     "questionid": "3",
-    "answer": "Social worker",
+    "answer": "Camp counselor",
     "playerids": "24"
   },
   {
     "title": "3",
     "questionid": "3",
-    "answer": "MLS player",
+    "answer": "Dentist",
     "playerids": "4"
   },
   {
@@ -92,26 +98,26 @@
   {
     "title": "3",
     "questionid": "3",
-    "answer": "Sports writer",
+    "answer": "Math teacher",
     "playerids": "89"
   },
   {
     "title": "4",
     "questionid": "4",
     "answer": "Something I need to iron",
+    "playerids": "3 25 4"
+  },
+  {
+    "title": "4",
+    "questionid": "4",
+    "answer": "I can’t go anywhere without my Jordans",
     "playerids": "29"
   },
   {
     "title": "4",
     "questionid": "4",
-    "answer": "Whatever I wore to work",
-    "playerids": "3"
-  },
-  {
-    "title": "4",
-    "questionid": "4",
-    "answer": "A hoody sweatshirt is more versatile than you’d think",
-    "playerids": "72"
+    "answer": "Sweats are more versatile than you’d think",
+    "playerids": "24"
   },
   {
     "title": "5",
@@ -123,7 +129,13 @@
     "title": "5",
     "questionid": "5",
     "answer": "The South, y’all",
-    "playerids": "72 29 89"
+    "playerids": "89"
+  },
+  {
+    "title": "5",
+    "questionid": "5",
+    "answer": "Texas stands alone",
+    "playerids": "72 29"
   },
   {
     "title": "5",
@@ -141,7 +153,7 @@
     "title": "6",
     "questionid": "6",
     "answer": "I’m nervous",
-    "playerids": "24"
+    "playerids": ""
   },
   {
     "title": "6",
@@ -152,8 +164,8 @@
   {
     "title": "6",
     "questionid": "6",
-    "answer": "My last bonus feels like a while ago",
-    "playerids": "29"
+    "answer": "A bonus would be nice",
+    "playerids": "24"
   },
   {
     "title": "6",
@@ -165,13 +177,13 @@
     "title": "6",
     "questionid": "6",
     "answer": "I’ve got a nice cushion",
-    "playerids": "89 72"
+    "playerids": "89"
   },
   {
     "title": "6",
     "questionid": "6",
     "answer": "I’m living like a king",
-    "playerids": "25"
+    "playerids": "25 29"
   },
   {
     "title": "7",
@@ -189,13 +201,13 @@
     "title": "7",
     "questionid": "7",
     "answer": "I like to clown around",
-    "playerids": "89"
+    "playerids": "72"
   },
   {
     "title": "7",
     "questionid": "7",
     "answer": "I keep it real",
-    "playerids": "29 72"
+    "playerids": "29 89"
   },
   {
     "title": "7",
@@ -225,7 +237,7 @@
     "title": "8",
     "questionid": "8",
     "answer": "My feet are quick, but I can’t vouch for the rest",
-    "playerids": "4 24"
+    "playerids": "4"
   },
   {
     "title": "8",
@@ -237,25 +249,25 @@
     "title": "8",
     "questionid": "8",
     "answer": "I don’t dance in public",
-    "playerids": "29 89"
+    "playerids": "29"
   },
   {
     "title": "9",
     "questionid": "9",
     "answer": "Introvert",
-    "playerids": "24 89 4"
+    "playerids": "24 4"
   },
   {
     "title": "9",
     "questionid": "9",
     "answer": "Extrovert",
-    "playerids": "25 29 72"
+    "playerids": "25 72"
   },
   {
     "title": "9",
     "questionid": "9",
     "answer": "Depends on the situation",
-    "playerids": "3"
+    "playerids": "3 89 29"
   },
   {
     "title": "10",
@@ -279,31 +291,31 @@
     "title": "10",
     "questionid": "10",
     "answer": "The thoughtful one",
-    "playerids": "29"
+    "playerids": "89"
   },
   {
     "title": "10",
     "questionid": "10",
     "answer": "The tough one",
-    "playerids": "89"
+    "playerids": "29 24"
   },
   {
     "title": "11",
     "questionid": "11",
     "answer": "I play sports",
-    "playerids": "4 3"
+    "playerids": "3"
   },
   {
     "title": "11",
     "questionid": "11",
     "answer": "I play music",
-    "playerids": ""
+    "playerids": "29"
   },
   {
     "title": "11",
     "questionid": "11",
     "answer": "I like to travel",
-    "playerids": "72 89"
+    "playerids": "72"
   },
   {
     "title": "11",
@@ -315,7 +327,7 @@
     "title": "11",
     "questionid": "11",
     "answer": "I’m a homebody",
-    "playerids": "24"
+    "playerids": "89"
   },
   {
     "title": "12",

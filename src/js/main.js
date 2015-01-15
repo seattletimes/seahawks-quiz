@@ -5,9 +5,9 @@ var ich = require("icanhaz");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 
-var scores;
+var scores = {};
 var questionIndex;
-var id;
+var id = 1;
 
 // Set up templates
 ich.addTemplate("questionTemplate", questionTemplate);
@@ -20,17 +20,9 @@ new Share(".share-button", {
   }
 });
 
-var setup = function() {
-  scores = {};
-  id = 1;
-  showQuestion(questionIndex);
-  watchInput();
-  watchNext();
-};
-
 var showQuestion = function(questionId) {
-  $(".index").html(id + " of " + Object.keys(quizData).length);
-  $(".question-box").html(ich.questionTemplate(quizData[id]));
+  $(".index").html(id + " of " + Object.keys(window.quizData).length);
+  $(".question-box").html(ich.questionTemplate(window.quizData[id]));
 };
 
 var watchInput = function() {
@@ -46,19 +38,19 @@ var watchNext = function() {
     // score answer
     var playerPoints = $("input:checked").val().split(" ");
     playerPoints.forEach(function(point) {
-      if (point == "") return;
+      if (point === "") return;
       if (!scores[point]) { scores[point] = 0 }
-        scores[point] += 1;
+      scores[point] += 1;
     });
 
     // move on to next question
-    if (id < Object.keys(quizData).length) {
+    if (id < Object.keys(window.quizData).length) {
       id += 1;
       showQuestion(id);
       $(".next").removeClass("active");
       $(".next").attr("disabled", true);
       // Change button text on last question
-      if (id == Object.keys(quizData).length) {
+      if (id == Object.keys(window.quizData).length) {
         $(".next").html("FINISH");
       }
     } else {
@@ -110,5 +102,6 @@ var calculateResult = function() {
   $(".share-button").addClass("share-results");
 };
 
-// setup
-setup();
+showQuestion(questionIndex);
+watchInput();
+watchNext();

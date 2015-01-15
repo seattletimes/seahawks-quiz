@@ -5,6 +5,10 @@ var ich = require("icanhaz");
 var questionTemplate = require("./_questionTemplate.html");
 var resultTemplate = require("./_resultTemplate.html");
 
+var scores;
+var questionIndex;
+var id;
+
 // Set up templates
 ich.addTemplate("questionTemplate", questionTemplate);
 ich.addTemplate("resultTemplate", resultTemplate);
@@ -66,18 +70,24 @@ var watchNext = function() {
 var calculateResult = function() {
   // find highest match(es)
   var highestScore = 0;
+  for (var player in scores) {
+    if (scores[player] >= highestScore) {
+      highestScore = scores[player];
+    }
+  }
+
+  //loop again to find ties
   var highestPlayers = [];
-  for (var score in scores) {
-    if (scores[score] >= highestScore) {
-      highestPlayers.push(score);
-      highestScore = scores[score];
+  for (var player in scores) {
+    if (scores[player] == highestScore) {
+      highestPlayers.push(player);
     }
   }
 
   var random = Math.round(Math.random() * (highestPlayers.length - 1));
   var resultId = highestPlayers[random];
   var result;
-  playerData.forEach(function(player) {
+  window.playerData.forEach(function(player) {
     if (player.playerid != resultId) return;
     result = player;
   });
@@ -101,6 +111,4 @@ var calculateResult = function() {
 };
 
 // setup
-var scores;
-var questionIndex;
 setup();

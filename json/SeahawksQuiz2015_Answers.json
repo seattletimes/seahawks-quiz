@@ -150,6 +150,12 @@
     "playerids": ""
   },
   {
+    "title": "5",
+    "questionid": "5",
+    "answer": "Elsewhere",
+    "playerids": ""
+  },
+  {
     "title": "6",
     "questionid": "6",
     "answer": "I’m nervous",
@@ -188,7 +194,7 @@
   {
     "title": "7",
     "questionid": "7",
-    "answer": "I’m a savvy PR guy",
+    "answer": "I’m a savvy PR person",
     "playerids": "3"
   },
   {
